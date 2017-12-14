@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'stock_quote'
+gem "font-awesome-rails"
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
