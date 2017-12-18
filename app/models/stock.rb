@@ -15,4 +15,8 @@ class Stock < ApplicationRecord
   def self.strip_commas(number)
     number.gsub(",", "")
   end
+
+  def self.find_by_ticker(ticker_symbol)
+    where(ticker: ticker_symbol).first
+  end
 end
