@@ -20,4 +20,9 @@ class UsersController < ApplicationController
       format.js { render partial: 'friends/result' }
     end
   end
+
+  def show
+    @user = User.find(params[:id])
+    @user_stocks = @user.stocks
+  end
 end
